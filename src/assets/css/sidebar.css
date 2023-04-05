@@ -1,0 +1,60 @@
+.sidebar-window {
+  display: none;
+}
+
+#closeSidebarSvgButton {
+  display: none;
+}
+
+
+#xMarkSvgButton {
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sidebar-window-active {
+  position: fixed;
+  display: flex;
+  min-height: 50vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 960px) {
+  #xMarkSvgButton {
+    display: none;
+  }
+
+  #closeSidebarSvgButton {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .sidebar-window {
+    display: none;
+  }
+  
+  .sidebar-window-active {
+    position: unset;
+    min-height: 50vh;
+    width: 25%;
+    margin-left: auto;
+    border: 1px solid white;
+
+  }
+}
+
